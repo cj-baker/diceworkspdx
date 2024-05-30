@@ -1,10 +1,10 @@
 :root {
   --body-background: whitesmoke;
-  --primary-background: #9eb5a3;
-  --secondary-background: #083837;
+  --primary-background: #7a8255;
+  --secondary-background: #56623e;
   --primary-font: "Open Sans", sans-serif;
-  --header-color: #9d442a;
-  --subheading-color: #bc804d;
+  --header-color: #302910;
+  --subheading-color: #b7a97e;
   --header-font: "Konstarica";
 }
 @font-face {
@@ -20,13 +20,13 @@ nav {
 }
 
 .navbar a {
-  color: #083837 !important;
+  color: #b7a97e !important;
   font-size: 20px;
 }
 .navbar a:hover {
-  color: #9d442a !important;
+  color: #7d6342 !important;
   transition: ease-in-out 200ms;
-  border-bottom: 1px solid #9d442a;
+  border-bottom: 1px solid #7d6342;
 }
 a.navbar-brand {
   font-size: 40px;
@@ -46,6 +46,9 @@ header {
   color: var(--header-color);
   background-color: var(--secondary-background);
 }
+.logo {
+  width: 200px;
+}
 header h1 {
   font-family: "Konstarica";
   color: var(--header-color);
@@ -56,13 +59,13 @@ header h2 {
 }
 #header-button {
   width: 25%;
-  color: #9eb5a3;
-  border-color: #9eb5a3;
+  color: #202e15;
+  border-color: #202e15;
 }
 #header-button:hover {
-  background-color: #9eb5a3;
-  color: #083837;
-  border-color: #9eb5a3;
+  background-color: #202e15;
+  color: var(--primary-background);
+  border-color: var(--primary-background);
 }
 footer {
   background-color: var(--secondary-background);
@@ -74,7 +77,7 @@ footer {
   padding: 1vw 0vw 5vw 0vw;
   display: flex;
   justify-content: center;
-  border: 2px solid #bc804d;
+  border: 2px solid #202e15;
 }
 .hexContainer div {
   width: var(--s);
