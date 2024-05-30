@@ -100,10 +100,10 @@ footer {
 .hex {
   background-size: cover;
   background-repeat: no-repeat;
-  opacity: 50%;
-  filter: grayscale(100);
 }
-.hex:hover {
+.hex.second:hover,
+.hex.third:hover,
+.hex.fourth:hover {
   opacity: 100%;
   filter: grayscale(0);
   transition: ease-in-out 300ms;
@@ -113,10 +113,16 @@ footer {
 }
 .hex.second {
   background-image: url(../images/diceset3.png);
+  opacity: 50%;
+  filter: grayscale(100);
 }
 .hex.third {
   background-image: url(../images/diceset2.png);
+  opacity: 50%;
+  filter: grayscale(100);
 }
 .hex.fourth {
   background-image: url(../images/diceset4.png);
+  opacity: 50%;
+  filter: grayscale(100);
 }
