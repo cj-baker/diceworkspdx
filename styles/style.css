@@ -44,7 +44,6 @@ header {
   padding: 30px 0;
   text-align: center;
   color: var(--header-color);
-  background-color: var(--secondary-background);
 }
 .logo {
   width: 200px;
@@ -52,24 +51,12 @@ header {
 header h1 {
   font-family: "Konstarica";
   color: var(--header-color);
-  font-size: 72px;
+  font-size: 80px;
 }
 header h2 {
   color: var(--subheading-color);
 }
-#header-button {
-  width: 25%;
-  color: #202e15;
-  border-color: #202e15;
-}
-#header-button:hover {
-  background-color: #202e15;
-  color: var(--primary-background);
-  border-color: var(--primary-background);
-}
-footer {
-  background-color: var(--secondary-background);
-}
+
 .hexGrid {
   --s: 15vw; /* size of a hexagon */
   --m: 0.5vw; /* space between each heaxgon */
@@ -100,10 +87,10 @@ footer {
 .hex {
   background-size: cover;
   background-repeat: no-repeat;
+  opacity: 50%;
+  filter: grayscale(100);
 }
-.hex.second:hover,
-.hex.third:hover,
-.hex.fourth:hover {
+.hex:hover {
   opacity: 100%;
   filter: grayscale(0);
   transition: ease-in-out 300ms;
@@ -113,16 +100,36 @@ footer {
 }
 .hex.second {
   background-image: url(../images/diceset3.png);
-  opacity: 50%;
-  filter: grayscale(100);
 }
 .hex.third {
   background-image: url(../images/diceset2.png);
-  opacity: 50%;
-  filter: grayscale(100);
 }
 .hex.fourth {
   background-image: url(../images/diceset4.png);
-  opacity: 50%;
-  filter: grayscale(100);
+}
+#header-button {
+  width: 25%;
+  color: #202e15;
+  border-color: #202e15;
+}
+#header-button:hover {
+  background-color: #202e15;
+  color: var(--primary-background);
+  border-color: var(--primary-background);
+}
+main {
+  padding: 60px 10;
+  text-align: center;
+  display: block;
+}
+main h1 {
+  font-family: "Konstarica";
+  color: var(--header-color);
+  font-size: 64px;
+}
+.carousel-container div {
+  max-height: 500px;
+}
+footer {
+  background-color: var(--secondary-background);
 }
